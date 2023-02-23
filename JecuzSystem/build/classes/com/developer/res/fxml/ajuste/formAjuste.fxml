@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="myBorderPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developer.res.fxml.ajuste.FormAjusteController">
+   <center>
+      <StackPane maxWidth="1.7976931348623157E308" minWidth="0.0" style="-fx-background-color: transparent;">
+         <padding>
+            <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+         </padding>
+         <children>
+            <VBox alignment="BOTTOM_RIGHT" prefHeight="511.0" prefWidth="649.0" spacing="10.0">
+               <children>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" focusTraversable="true" prefHeight="439.0" prefWidth="937.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="439.0" prefWidth="770.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="437.0" prefWidth="882.0" spacing="20.0" styleClass="teste">
+                                 <children>
+                                    <AnchorPane minWidth="370.0" prefHeight="439.0" prefWidth="385.0">
+                                       <children>
+                                          <FontAwesomeIconView glyphName="BALANCE_SCALE" layoutY="271.0" size="150">
+                                             <fill>
+                                                <LinearGradient endX="1.0" endY="0.8857142857142857" startX="0.5714285714285714" startY="1.0">
+                                                   <stops>
+                                                      <Stop color="#1a6886" />
+                                                      <Stop color="#a9daf500" offset="0.9381443298969071" />
+                                                      <Stop color="#a9daf500" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </fill>
+                                          </FontAwesomeIconView>
+                                          <GridPane hgap="10.0" layoutX="-9.0" layoutY="59.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="35.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <JFXTextField fx:id="txt_produto" focusColor="#32687f" prefHeight="31.0" prefWidth="384.0" promptText="Produto" unFocusColor="#1e4554">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="16.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                          </GridPane>
+                                          <VBox layoutX="226.0" layoutY="142.0" prefHeight="252.0" prefWidth="195.0" spacing="10.0">
+                                             <children>
+                                                <Text fx:id="lb_produto" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalhes">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="16.0" />
+                                                   </font>
+                                                </Text>
+                                                <VBox prefHeight="162.0" prefWidth="195.0" spacing="10.0">
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                   <children>
+                                                      <Text fx:id="lb_categoria" fill="#404040" strokeType="OUTSIDE" strokeWidth="0.0" text="Designação do Produto">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="12.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="lb_categoria2" fill="#404040" layoutX="20.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primeira categoria">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="12.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="lb_categoria3" fill="#404040" layoutX="20.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segunda Categoria">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="12.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="lb_categoria4" fill="#404040" layoutX="20.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terceira categaria">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="12.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="14.0" layoutY="367.0" prefHeight="109.0" prefWidth="379.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="111.0">
+                                             <children>
+                                                <Text fill="#32687f" strokeType="OUTSIDE" strokeWidth="0.0" text="Referência">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="22.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox prefHeight="62.0" prefWidth="449.0" spacing="3.0">
+                                                   <children>
+                                                      <FontAwesomeIconView glyphName="BARCODE" size="60" />
+                                                      <FontAwesomeIconView glyphName="BARCODE" layoutX="10.0" layoutY="61.0" size="60" />
+                                                      <FontAwesomeIconView glyphName="BARCODE" layoutX="70.0" layoutY="61.0" size="60" />
+                                                      <FontAwesomeIconView glyphName="BARCODE" layoutX="136.0" layoutY="61.0" size="60" />
+                                                      <FontAwesomeIconView glyphName="BARCODE" layoutX="199.0" layoutY="61.0" size="60" wrappingWidth="51.0" />
+                                                      <FontAwesomeIconView glyphName="BARCODE" layoutX="262.0" layoutY="61.0" size="60" wrappingWidth="49.0" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" spacing="5.0" style="-fx-border-color: #000; -fx-border-width: 0 0 0 2;" translateY="-12.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                      <Text layoutX="17.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                      <Text layoutX="24.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                      <Text layoutX="38.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="45.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="52.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="59.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+                                                      <Text layoutX="66.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+                                                      <Text layoutX="73.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="80.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                      <Text layoutX="87.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                                      <Text layoutX="94.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="101.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="108.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="115.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="122.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="129.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="157.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                                      <Text layoutX="164.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                      <Text layoutX="171.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="178.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="192.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                      <Text layoutX="206.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                      <Text layoutX="213.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="220.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="227.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="234.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="241.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                      <Text layoutX="248.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+                                                      <Text layoutX="255.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+                                                      <Text layoutX="262.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="13.46875" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" layoutX="39.0" layoutY="102.0" prefHeight="272.0" prefWidth="245.0" spacing="30.0" AnchorPane.leftAnchor="10.0">
+                                             <children>
+                                                <JFXTextField fx:id="txt_quantidade" focusColor="#32687f" labelFloat="true" prefHeight="25.0" prefWidth="269.0" promptText="Quantidade * ." />
+                                                <JFXTextArea fx:id="txt_detalhes" focusColor="#32687f" labelFloat="true" prefHeight="118.0" prefWidth="300.0" promptText="Detalhes" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </FlowPane>
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                     <children>
+                        <JFXButton contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" onAction="#guardarSaidaEmLote" style="-fx-background-color: #32687f;" text="GUARDAR" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_DOUBLE_RIGHT" size="14" />
+                           </graphic>
+                           <padding>
+                              <Insets bottom="6.0" left="15.0" right="15.0" top="6.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <effect>
+      <InnerShadow color="#33538a" height="5.0" radius="2.0" width="5.0" />
+   </effect>
+   <top>
+      <HBox spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home /">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock /">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="textInforme" layoutX="114.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saida">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" onMouseClicked="#clossingView" style="-fx-cursor: hand;" stylesheets="@../../css/clossingButom.css">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <MaterialDesignIconView glyphName="WINDOW_CLOSE" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>

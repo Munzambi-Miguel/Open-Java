@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developer.res.fxml.clientes.FormeClientController">
+   <center>
+      <StackPane>
+         <children>
+            <BorderPane fx:id="formularioBorderPane" minHeight="640.0" prefHeight="640.0" prefWidth="708.0" style="-fx-background-color: f5f5f5f5;">
+               <center>
+                  <BorderPane BorderPane.alignment="CENTER">
+                     <center>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="600.0" minHeight="411.0" prefHeight="411.0" prefWidth="704.0">
+                                 <children>
+                                    <AnchorPane focusTraversable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="593.0" prefWidth="700.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="581.0" prefWidth="700.0">
+                                             <children>
+                                                <VBox alignment="CENTER_LEFT" focusTraversable="true" prefHeight="454.0" prefWidth="326.0" spacing="40.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Infromação Geral">
+                                                         <font>
+                                                            <Font name="Segoe UI Bold" size="14.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <HBox>
+                                                         <children>
+                                                            <VBox alignment="BASELINE_LEFT" spacing="10.0">
+                                                               <children>
+                                                                  <VBox fx:id="vBoxImagemProduto" maxHeight="180.0" maxWidth="180.0" minHeight="170.0" minWidth="180.0" prefHeight="180.0" prefWidth="180.0" />
+                                                                  <HBox spacing="10.0">
+                                                                     <children>
+                                                                        <FontAwesomeIconView fill="#4f7da8" glyphName="CAMERA" onMouseClicked="#setImagemEventMause" size="16" style="-fx-cursor: hand;" />
+                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <VBox spacing="35.0">
+                                                         <children>
+                                                            <JFXTextField fx:id="numeroIdentificacao" focusColor="#4076a8" labelFloat="true" promptText="Nº Identificação Nif / BI" />
+                                                            <JFXTextField fx:id="nomecliente" focusColor="#4088a8" labelFloat="true" promptText=" Nome * ." />
+                                                            <VBox spacing="10.0">
+                                                               <children>
+                                                                  <AnchorPane>
+                                                                     <children>
+                                                                        <JFXComboBox fx:id="tipoCliente" focusColor="#406fa8" labelFloat="true" promptText="Seleciona o tipo de Cliente * ." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                        <JFXButton fx:id="btn_tipoClient" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="30.0" minHeight="25.0" minWidth="25.0" onAction="#newTipoCliente" textFill="#4e7fa4" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                                           <graphic>
+                                                                              <FontAwesomeIconView fill="#4a4a4a" glyphName="PLUS" size="14" />
+                                                                           </graphic>
+                                                                           <cursor>
+                                                                              <Cursor fx:constant="HAND" />
+                                                                           </cursor>
+                                                                        </JFXButton>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <VBox spacing="15.0">
+                                                                     <children>
+                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero">
+                                                                           <font>
+                                                                              <Font name="System Bold" size="12.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                                                           <children>
+                                                                              <JFXRadioButton text="Masculino" textFill="#2b4b65">
+                                                                                 <toggleGroup>
+                                                                                    <ToggleGroup fx:id="Genero" />
+                                                                                 </toggleGroup>
+                                                                              </JFXRadioButton>
+                                                                              <JFXRadioButton layoutX="10.0" layoutY="10.0" text="Feminino" textFill="#2b4b65" toggleGroup="$Genero" />
+                                                                              <JFXRadioButton layoutX="103.0" layoutY="10.0" text="Outro" textFill="#2b4b65" toggleGroup="$Genero" />
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets left="10.0" right="10.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" top="10.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox alignment="BOTTOM_LEFT" focusTraversable="true" spacing="40.0" style="-fx-border-color: #ddd; -fx-border-width: 0 0 0 1;" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <MaterialDesignIconView glyphName="PHONE_IN_TALK" size="20" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto">
+                                                               <font>
+                                                                  <Font name="Segoe UI Bold" size="12.0" />
+                                                               </font>
+                                                            </Text>
+                                                         </children>
+                                                      </HBox>
+                                                      <JFXTextField fx:id="fax" focusColor="#407ba8" labelFloat="true" promptText="Fax" />
+                                                      <JFXTextField fx:id="telefone" focusColor="#4084a8" labelFloat="true" layoutX="31.0" layoutY="425.0" promptText="Telefone * ." />
+                                                      <JFXTextField fx:id="telefone2" focusColor="#4078a8" labelFloat="true" layoutX="31.0" layoutY="425.0" promptText="Telefone" />
+                                                      <JFXTextArea fx:id="email" focusColor="#4078a8" labelFloat="true" minHeight="26.0" prefHeight="26.0" prefWidth="293.0" promptText="Email" />
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <JFXComboBox fx:id="cidadeCliente" focusColor="#407fa8" labelFloat="true" promptText="Seleciona a Cidade" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                            <JFXButton fx:id="btn_cidade" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="264.0" layoutY="10.0" maxHeight="25.0" maxWidth="30.0" minHeight="25.0" minWidth="25.0" onAction="#newCidadeCalling" textFill="#95d1ff" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                               <graphic>
+                                                                  <FontAwesomeIconView glyphName="PLUS" size="14" />
+                                                               </graphic>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <JFXTextArea fx:id="endereco" focusColor="#4078a8" labelFloat="true" prefHeight="79.0" prefWidth="293.0" promptText="Descrição do Endereço" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </center>
+                     <bottom>
+                        <AnchorPane BorderPane.alignment="CENTER">
+                           <children>
+                              <JFXProgressBar fx:id="progressBar" opacity="0.72" progress="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                     </bottom>
+                  </BorderPane>
+               </center>
+               <bottom>
+                  <HBox alignment="BOTTOM_RIGHT" focusTraversable="true" prefWidth="704.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="idIdent" style="-fx-background-color: Transparent;" />
+                        <JFXButton contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="580.0" layoutY="20.0" onAction="#guardarCliente" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #4f7da8;" text="GUARDAR" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_DOUBLE_DOWN" lineSpacing="10.0" translateY="1.0" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </bottom>
+               <top>
+                  <HBox focusTraversable="true" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home /">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente /">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textInforme" layoutX="114.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro">
+                           <font>
+                              <Font name="Segoe UI Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER" onMouseClicked="#clossingView" style="-fx-cursor: hand;" stylesheets="@../../css/clossingButom.css">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <MaterialDesignIconView glyphName="WINDOW_CLOSE" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                     </padding>
+                  </HBox>
+               </top>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+               <effect>
+                  <InnerShadow color="#2a4e72" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

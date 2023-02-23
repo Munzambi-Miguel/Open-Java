@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 19, 2018, 6:13:16 PM
+    Author     : Munzambi Miguel
+*/
+
+.label-User{
+    -fx-textFill: #a4a4a4;
+    -fx-font-family:'Segoe UI';
+    -fx-cursor: hand;
+}
+
+.label-size-12{
+    -fx-font-size:12.0;
+}
+
+.label-size-20{
+    -fx-font-size:20.0;
+}

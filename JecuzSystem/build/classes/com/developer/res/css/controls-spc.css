@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 28, 2015, 2:33:32 PM
+    Author     : Felipe
+*/
+
+*{
+    -color-primary:#3F51B5;
+    -color-accent:#F44336;
+    -color-secondary:#1E88E5;
+    -color-dark-primary:#1976D2;
+    -color-body:#F5F5F5;
+}
+
+
+/*.date-picker-popup > * > .date-cell { 
+    -fx-background-color: transparent;
+    -fx-background-insets: 1, 2;
+    -fx-padding: 0;
+    -fx-alignment: BASELINE_CENTER;
+    -fx-opacity: 1.0;
+}*/
+/*.date-picker-popup > * > .day-name-cell,
+.date-picker-popup > * > .week-number-cell {
+    -fx-font-size: 16; 
+}*/
+
+
+/*ScrollPane*/
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+.scroll-pane > .viewport{
+    -fx-background-color: transparent;
+}
+/*ScrollBar*/
+.scroll-bar{
+    -fx-background-color:transparent;
+    -fx-padding: 0;
+}
+.scroll-bar > .thumb{
+    -fx-background-color:rgba(21, 21, 21, .9) ! important;
+    -fx-opacity: 0.5;
+    -fx-background-insets: 4;
+}
+.scroll-bar > .increment-button, 
+.scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+/** TableView**/
+

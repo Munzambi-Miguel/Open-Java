@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/out/2019, 19:49:25
+    Author     : hdglo
+*/
+
+
+.use-gradiente-background2{
+    
+   /* -fx-background-color: linear-gradient(from 10% 10% to 60% 50%, rgba(23,83,144,0.1), rgba(2,0,36,.9));*/
+    -fx-background-color: linear-gradient(from 10% 10% to 60% 30%, rgba(255,255,255,0.2), rgba(255,255,255,1));
+    
+   
+}

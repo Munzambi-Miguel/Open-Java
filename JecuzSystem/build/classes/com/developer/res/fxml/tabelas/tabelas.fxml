@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="myDashboard" minWidth="1200.0" prefHeight="330.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developer.res.fxml.tabelas.TabelasController">
+   <center>
+      <AnchorPane minWidth="0.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/tab-transparente.css">
+         <children>
+            <JFXTabPane style="-fx-background-color: Transparent;" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab text="Produtos">
+                    <content>
+                        <BorderPane fx:id="myBorderTabelasProduto" prefWidth="564.0">
+                           <center>
+                              <ScrollPane>
+                                 <content>
+                                    <HBox spacing="20.0">
+                                       <children>
+                                          <VBox fx:id="mHBPtables" spacing="20.0" HBox.hgrow="ALWAYS" />
+                                          <VBox fx:id="myVBTableDe" spacing="20.0" HBox.hgrow="ALWAYS" />
+                                          <VBox fx:id="myTablesEx" spacing="20.0" />
+                                       </children>
+                                    </HBox>
+                                 </content>
+                              </ScrollPane>
+                           </center>
+                        </BorderPane>
+                    </content>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CUBE" />
+                     </graphic>
+                  </Tab>
+                  <Tab text="Ambiente de Manuteção">
+                    <content>
+                        <BorderPane fx:id="myBorderTabelasGerais" nodeOrientation="LEFT_TO_RIGHT">
+                           <center>
+                              <HBox fx:id="myHBoxGTable" prefHeight="100.0" prefWidth="200.0" />
+                           </center>
+                        </BorderPane>
+                    </content>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TAGS" size="16" />
+                     </graphic>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <VBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="776.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="776.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="776.0" spacing="10.0">
+                     <children>
+                        <Hyperlink onAction="#callingHome" style="-fx-text-fill: rgba(21, 21, 21, .8);" text="Home">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Hyperlink>
+                        <Text fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="/   Tabelas">
+                           <font>
+                              <Font name="Segoe UI Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Plano">
+                           <font>
+                              <Font name="Segoe UI Bold" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="20.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow height="0.0" radius="0.24250000000000005" width="2.97" />
+                           </effect>
+                        </Text>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

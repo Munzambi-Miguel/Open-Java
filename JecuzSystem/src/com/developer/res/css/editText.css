@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 3, 2018, 2:11:20 PM
+    Author     : Munzambi Miguel
+*/
+
+/* EditText*/
+.jfx-text-field{
+    -fx-baseline-color: -color-primary;
+    -fx-baseline-focus-color: -color-accent;
+    -fx-padding: 16 0 8 0;
+}
+.jfx-text-field.hint{
+    -fx-padding: 16 0 8 0;
+}
+
+.text-Color *{
+    -fx-text-fill:#ffffff ! important; 
+    -fx-fill:#ffffff ! important; 
+}
+*{
+    -fx-text-fill:#ffffff ! important; 
+    -fx-fill:#ffffff ! important; 
+}
+
+.jfx-text-field.icon .icon-svg{
+    -fx-fill:#ffffff;
+}
+.jfx-text-field.icon.focus .icon-svg{
+
+    -fx-fill: -color-primary;
+}
+
+
+.jfx-text-field.icon{
+    -fx-padding:16 0 8 48;
+}
+
+.jfx-text-field .text-input{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-padding:0 0 8 0;
+    -fx-border-width: 0 0 1 0 ;
+    -fx-border-color: rgba(255, 255, 255, 1);
+}
+.jfx-text-field .text-input:disabled{
+    -fx-border-style:dashed;
+    -fx-opacity:0.7;
+}
+.jfx-text-field .label{
+    -fx-text-fill:#ffffff;
+}
+.jfx-text-field  .label.up  {
+    -fx-text-fill:-color-primary;
+}
+.jfx-text-field .bar{
+    -fx-stroke: -color-primary;
+}
+
+.text-area{
+
+    -fx-wrap-text: true;
+    -fx-background-color: transparent;
+}
+.text-area .content{
+    -fx-background-color: transparent;
+    -fx-padding: 0.0em;
+}
+.text-area .viewport{
+    -fx-background-color: transparent;
+}

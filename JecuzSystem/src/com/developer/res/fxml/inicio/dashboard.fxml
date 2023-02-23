@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developer.res.fxml.inicio.DashboardController">
+   <center>
+      <BorderPane style="-fx-background-color: rgba(255,255,255,0.5);">
+         <center>
+            <VBox fx:id="myVBInternar" alignment="CENTER_LEFT" spacing="10.0" />
+         </center>
+         <top>
+            <VBox alignment="CENTER_LEFT">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="776.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="776.0" spacing="10.0">
+                           <children>
+                              <Hyperlink onAction="#callingHome" style="-fx-text-fill: rgba(21, 21, 21, .8);" text="Home">
+                                 <font>
+                                    <Font name="Segoe UI" size="12.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD">
+                                 <font>
+                                    <Font name="Segoe UI" size="28.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="20.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <DropShadow height="0.0" radius="0.24250000000000005" width="2.97" />
+                                 </effect>
+                              </Text>
+                              <Separator prefWidth="200.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>

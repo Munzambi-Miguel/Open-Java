@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="myDashboard" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developer.res.fxml.venda.ProductViewController">
+   <center>
+      <StackPane maxWidth="1.7976931348623157E308" minWidth="0.0" style="-fx-background-color: transparent;">
+         <padding>
+            <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+         </padding>
+         <children>
+            <VBox alignment="BOTTOM_RIGHT" prefHeight="511.0" prefWidth="649.0" spacing="10.0">
+               <children>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" focusTraversable="true" prefHeight="439.0" prefWidth="937.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="439.0" prefWidth="770.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="437.0" prefWidth="882.0" spacing="20.0" styleClass="teste">
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <AnchorPane minWidth="370.0" prefHeight="439.0" prefWidth="385.0">
+                                             <children>
+                                                <VBox layoutX="14.0" layoutY="367.0" prefHeight="113.0" prefWidth="376.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="9.0">
+                                                   <children>
+                                                      <Text fill="#32687f" strokeType="OUTSIDE" strokeWidth="0.0" text="Referência">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="22.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <InnerShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <HBox prefHeight="62.0" prefWidth="449.0" spacing="3.0">
+                                                         <children>
+                                                            <FontAwesomeIconView glyphName="BARCODE" size="60" />
+                                                            <FontAwesomeIconView glyphName="BARCODE" layoutX="10.0" layoutY="61.0" size="60" />
+                                                            <FontAwesomeIconView glyphName="BARCODE" layoutX="70.0" layoutY="61.0" size="60" />
+                                                            <FontAwesomeIconView glyphName="BARCODE" layoutX="136.0" layoutY="61.0" size="60" />
+                                                            <FontAwesomeIconView glyphName="BARCODE" layoutX="199.0" layoutY="61.0" size="60" />
+                                                            <FontAwesomeIconView glyphName="BARCODE" layoutX="262.0" layoutY="61.0" size="60" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" spacing="5.0" style="-fx-border-color: #000; -fx-border-width: 0 0 0 2;" translateY="-12.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                            <Text layoutX="17.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                            <Text layoutX="24.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                            <Text layoutX="38.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="45.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="52.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="59.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+                                                            <Text layoutX="66.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+                                                            <Text layoutX="73.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="80.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                            <Text layoutX="87.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                                            <Text layoutX="94.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="101.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="108.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="115.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="122.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="129.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="157.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                                            <Text layoutX="164.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                            <Text layoutX="171.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="178.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="192.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                            <Text layoutX="206.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                                            <Text layoutX="213.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="220.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="227.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="234.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="241.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                            <Text layoutX="248.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+                                                            <Text layoutX="255.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+                                                            <Text layoutX="262.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox fx:id="imageVBespace" layoutX="3.0" layoutY="14.0" prefHeight="300.0" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0">
+                                       <effect>
+                                          <InnerShadow />
+                                       </effect>
+                                    </Separator>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" layoutX="39.0" layoutY="102.0" prefHeight="272.0" prefWidth="245.0" spacing="30.0" AnchorPane.leftAnchor="10.0">
+                                             <children>
+                                                <VBox prefHeight="252.0" prefWidth="195.0" spacing="10.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Detalhes">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <InnerShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <VBox prefHeight="220.0" prefWidth="255.0" spacing="10.0">
+                                                         <padding>
+                                                            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <Text fx:id="designacao_text" fill="#404040" strokeType="OUTSIDE" strokeWidth="0.0" text="Designação do Produto" wrappingWidth="219.880859375">
+                                                               <font>
+                                                                  <Font name="Segoe UI" size="16.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text fx:id="cateroria_text1" fill="#404040" layoutX="20.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primeira categoria" wrappingWidth="220.15234375">
+                                                               <font>
+                                                                  <Font name="Segoe UI" size="16.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text fx:id="categoria_text2" fill="#404040" layoutX="20.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segunda Categoria" wrappingWidth="217.916015625">
+                                                               <font>
+                                                                  <Font name="Segoe UI" size="16.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text fx:id="categoria_text3" fill="#404040" layoutX="20.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terceira categaria" wrappingWidth="223.369140625">
+                                                               <font>
+                                                                  <Font name="Segoe UI" size="16.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text fx:id="text_preco" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" wrappingWidth="213.54296875">
+                                                               <font>
+                                                                  <Font name="Segoe UI" size="20.0" />
+                                                               </font>
+                                                               <effect>
+                                                                  <InnerShadow />
+                                                               </effect>
+                                                            </Text>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </VBox>
+                                                <AnchorPane focusTraversable="true">
+                                                   <children>
+                                                      <JFXTextField fx:id="quantidade_text" focusColor="#32687f" labelFloat="true" onTouchPressed="#addingCarriMethod" prefHeight="25.0" prefWidth="269.0" promptText="Quantidade * ." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <font>
+                                                            <Font size="16.0" />
+                                                         </font>
+                                                      </JFXTextField>
+                                                      <VBox prefHeight="25.0" prefWidth="23.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="-10.0">
+                                                         <children>
+                                                            <JFXButton contentDisplay="CENTER" maxHeight="20.0" maxWidth="20.0" minHeight="0.0" minWidth="0.0" style="-fx-cursor: hand;">
+                                                               <graphic>
+                                                                  <FontAwesomeIconView glyphName="CHEVRON_UP" style="-fx-cursor: hand;" />
+                                                               </graphic>
+                                                            </JFXButton>
+                                                            <JFXButton contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="20.0" maxWidth="20.0" minHeight="0.0" minWidth="0.0" style="-fx-cursor: hand;">
+                                                               <graphic>
+                                                                  <FontAwesomeIconView glyphName="CHEVRON_DOWN" style="-fx-cursor: hand;" />
+                                                               </graphic>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </FlowPane>
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="addCar_btn" contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" onAction="#addCarriMethod" style="-fx-background-color: #32687f;" text="ADICIONAR" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_DOUBLE_RIGHT" size="14" />
+                           </graphic>
+                           <padding>
+                              <Insets bottom="6.0" left="15.0" right="15.0" top="6.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <effect>
+      <InnerShadow color="#32687f" height="10.0" radius="4.5" width="10.0" />
+   </effect>
+   <top>
+      <HBox spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home /">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto /">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="textInforme" layoutX="114.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configurar para o carrim de Compra">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" onMouseClicked="#clossingView" style="-fx-cursor: hand;" stylesheets="@../../css/clossingButom.css">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <MaterialDesignIconView glyphName="WINDOW_CLOSE" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>

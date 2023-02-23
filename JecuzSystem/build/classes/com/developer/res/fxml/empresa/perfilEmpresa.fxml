@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="myDashboard" prefHeight="869.0" prefWidth="1210.0" style="-fx-background-color: rgba(255,250,255,0.5);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developer.res.fxml.empresa.PerfilEmpresaController">
+   <center>
+      <BorderPane fx:id="mainBordeClientes" nodeOrientation="LEFT_TO_RIGHT">
+         <center>
+            <BorderPane fx:id="myBorderPaneInternar">
+               <top>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" spacing="10.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </top>
+               <center>
+                  <AnchorPane BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutY="-26.571426391601562" spacing="35.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: #FCF7E4;">
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" minWidth="400.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox alignment="CENTER" spacing="10.0">
+                                             <children>
+                                                <FontAwesomeIconView glyphName="EDIT" size="20" style="-fx-cursor: hand;" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <Text lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O empregado que faz algo de errado em seu trabalho não é necessariamente punido com a demissão por justa causa. A Consolidação das Leis do Trabalho (CLT) reservou em seu texto algumas ferramentas destinadas ao empregador para que ele consiga manter a ordem e a disciplina de seus funcionários.No post de hoje, falaremos quais são as regras de advertências no trabalho que podem prejudicar o trabalhador" textAlignment="CENTER" wrappingWidth="397.13671875">
+                                             <font>
+                                                <Font name="Segoe UI" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <JFXButton maxHeight="35.0" maxWidth="35.0" minHeight="0.0" minWidth="0.0" text=" " textFill="#4f7da8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                                       <graphic>
+                                          <MaterialDesignIconView glyphName="PRINTER" size="24" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </AnchorPane>
+                              <Separator opacity="0.16" orientation="VERTICAL" prefHeight="200.0">
+                                 <effect>
+                                    <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </Separator>
+                              <HBox alignment="CENTER_RIGHT">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <HBox prefHeight="279.0" prefWidth="647.0">
+                                             <children>
+                                                <VBox alignment="BASELINE_LEFT" prefHeight="279.0" prefWidth="292.0" spacing="10.0">
+                                                   <children>
+                                                      <VBox fx:id="vBoxImagemProduto" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" style="-fx-border-color: #ddd; -fx-border-radius: 4; -fx-background-color: rgba(255,255,255,0.1); -fx-background-radius: 4;" />
+                                                      <HBox spacing="10.0">
+                                                         <children>
+                                                            <FontAwesomeIconView fill="#4f7da8" glyphName="CAMERA" onMouseClicked="#setImagemEventMause" size="16" style="-fx-cursor: hand;" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <VBox maxWidth="400.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <JFXTextField focusColor="#32687f" labelFloat="true" promptText="Presidente da organização * ." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                      <FontAwesomeIconView glyphName="PLUS" style="-fx-cursor: hand;" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="411.0" spacing="20.0" style="-fx-background-color: #f4f4f4; -fx-background-radius: 4;" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <FontAwesomeIconView glyphName="PHONE" size="15" />
+                                                         </children>
+                                                      </HBox>
+                                                      <VBox spacing="10.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fax" wrappingWidth="234.13671875" />
+                                                            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº Telefone: +244 990 989 848" wrappingWidth="234.13671875" />
+                                                            <Text layoutX="10.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: hdglory.hto@gmail.com" wrappingWidth="234.13671875" />
+                                                         </children>
+                                                      </VBox>
+                                                      <FontAwesomeIconView glyphName="EDIT" size="20" style="-fx-cursor: hand;" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="35.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="20.0">
+                                 <children>
+                                    <VBox alignment="BOTTOM_LEFT" spacing="20.0">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <FontAwesomeIconView fill="#4f7da8" glyphName="HOME" size="35" />
+                                                <VBox alignment="CENTER_LEFT" prefHeight="239.0" prefWidth="245.0" spacing="35.0">
+                                                   <children>
+                                                      <JFXTextField fx:id="ipNretWork" focusColor="#32687f" labelFloat="true" prefHeight="25.0" prefWidth="269.0" promptText="Empresa * ." />
+                                                      <JFXTextField fx:id="username" focusColor="#32687f" labelFloat="true" layoutX="10.0" layoutY="134.0" prefHeight="25.0" prefWidth="269.0" promptText="Nº contribuente * ." />
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <JFXComboBox focusColor="#32687f" labelFloat="true" promptText="Grupo organizacional" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="TOP_RIGHT" spacing="10.0" style="-fx-background-color: #f4f4f4; -fx-background-radius: 4;">
+                                             <children>
+                                                <VBox spacing="15.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço" wrappingWidth="281.13671875">
+                                                         <font>
+                                                            <Font name="Segoe UI Bold" size="16.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <VBox>
+                                                         <children>
+                                                            <VBox spacing="10.0">
+                                                               <children>
+                                                                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luanda" wrappingWidth="234.13671875">
+                                                                     <font>
+                                                                        <Font name="Segoe UI" size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zona da lixeira, rua do golf quintalão" wrappingWidth="234.13671875" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </VBox>
+                                                <FontAwesomeIconView glyphName="EDIT" size="20" style="-fx-cursor: hand;" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox alignment="TOP_RIGHT" spacing="10.0" style="-fx-background-color: #f4f4f4; -fx-background-radius: 4;">
+                                             <children>
+                                                <HBox>
+                                                   <children>
+                                                      <FontAwesomeIconView glyphName="PHONE" size="15" />
+                                                   </children>
+                                                </HBox>
+                                                <VBox spacing="10.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fax" wrappingWidth="234.13671875" />
+                                                      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº Telefone: +244 990 989 848" wrappingWidth="234.13671875" />
+                                                      <Text layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº Aternativo: +244 789 230 189" wrappingWidth="234.13671875" />
+                                                      <Text layoutX="10.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: hdglory.hto@gmail.com" wrappingWidth="234.13671875" />
+                                                      <Text layoutX="10.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="www.google.co.ao" wrappingWidth="234.13671875" />
+                                                   </children>
+                                                </VBox>
+                                                <FontAwesomeIconView glyphName="EDIT" size="20" style="-fx-cursor: hand;" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <ProgressIndicator prefHeight="26.0" prefWidth="23.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <VBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="776.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="776.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="776.0" spacing="10.0">
+                     <children>
+                        <Hyperlink onAction="#callingHome" style="-fx-text-fill: rgba(21, 21, 21, .8);" text="Home">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Hyperlink>
+                        <Text fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="/   Empresa">
+                           <font>
+                              <Font name="Segoe UI Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Perfil">
+                           <font>
+                              <Font name="Segoe UI Bold" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="20.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow height="0.0" radius="0.24250000000000005" width="2.97" />
+                           </effect>
+                        </Text>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

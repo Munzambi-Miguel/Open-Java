@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/out/2019, 21:01:22
+    Author     : hdglo
+*/
+
+
+*:hover{
+    -fx-background-color:  rgba(233, 118, 114, 0.24);
+    -fx-fill: rgb(0, 0, 0);
+
+}

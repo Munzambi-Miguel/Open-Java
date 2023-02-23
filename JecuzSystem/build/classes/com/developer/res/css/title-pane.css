@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/out/2019, 19:08:25
+    Author     : hdglo
+*/
+
+.titled-pane > .title {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	/*-fx-background-insets: 5, 1, 5;*/
+	-fx-background-radius: 3 3 0 0, 2 2 0 0, 1 1 0 0;
+	-fx-border-radius: 3 3 0 0, 2 2 0 0, 1 1 0 0;
+	-fx-padding: 11
+}
+
+.titled-pane > .content {
+	-fx-background-color: transparent;
+	-fx-background-radius: 0 0 4 4;
+	-fx-border-radius: 0 0 4 4;
+	-fx-border-color: transparent;
+	/*-fx-padding: -11;*/
+}
+
+.titled-pane.primary {
+	-fx-text-fill: white;
+}
+
+.titled-pane.primary > .title {
+	-fx-background-color: transparent;
+	-fx-border-color: #24B6F7;
+}
+
+.titled-pane.primary > .content {
+	-fx-border-color: #24B6F7;
+}
+
+.titled-pane.success .arrow,
+.titled-pane.info .arrow,
+.titled-pane.warning .arrow,
+.titled-pane.danger .arrow {
+	-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+}
+
+.titled-pane.success {
+	-fx-text-fill: #3c763d;
+}
+
+.titled-pane.success > .title {
+	-fx-background-color: #dff0d8;
+	-fx-border-color: #d6e9c6;
+}
+
+.titled-pane.success > .content {
+	-fx-border-color: #d6e9c6;
+}
+
+.titled-pane.info {
+	-fx-text-fill: #31708f;
+}
+
+.titled-pane.info > .title {
+	-fx-background-color: #d9edf7;
+	-fx-border-color: #bce8f1;
+}
+
+.titled-pane.info > .content {
+	-fx-border-color: #bce8f1;
+}
+
+.titled-pane.warning {
+	-fx-text-fill: #8a6d3b;
+}
+
+.titled-pane.warning > .title {
+	-fx-background-color: #fcf8e3;
+	-fx-border-color: #faebcc;
+}
+
+.titled-pane.warning > .content {
+	-fx-border-color: #faebcc;
+}
+
+.titled-pane.danger {
+	-fx-text-fill: #a94442;
+}
+
+.titled-pane.danger > .title {
+	-fx-background-color: #f2dede;
+	-fx-border-color: #eacbd0;
+}
+
+.titled-pane.danger > .content {
+	-fx-border-color: #eacbd0;
+}
+
+.accordion > .titled-pane > .title,
+.accordion > .titled-pane > .content {
+	-fx-background-radius: 0;
+	-fx-border-radius: 0;
+}

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="formularioBorderPane" style="-fx-background-color: f5f5f5f5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developer.res.fxml.produtos.FormeProdutoController">
+   <center>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <HBox alignment="CENTER" maxHeight="600.0" minHeight="472.0" prefHeight="506.0" prefWidth="700.0">
+               <children>
+                  <AnchorPane nodeOrientation="LEFT_TO_RIGHT">
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <VBox alignment="BOTTOM_LEFT" focusTraversable="true" prefHeight="500.0" prefWidth="326.0" spacing="35.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Infromação Geral">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <VBox spacing="40.0">
+                                       <children>
+                                          <AnchorPane layoutX="20.0" layoutY="280.0">
+                                             <children>
+                                                <JFXComboBox fx:id="cmb_marca" labelFloat="true" promptText="Marca / Tipo * ." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <JFXButton fx:id="btn_tipo" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="30.0" minHeight="0.0" minWidth="0.0" onAction="#callingFormTipeSub" textFill="#95d1ff" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="#4f7da8" glyphName="PLUS" size="14" />
+                                                   </graphic>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <JFXTextField fx:id="codigoDeBarra" labelFloat="true" promptText="P/N" />
+                                          <AnchorPane layoutX="20.0" layoutY="215.0">
+                                             <children>
+                                                <JFXComboBox fx:id="cob_origem" labelFloat="true" promptText="Origem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <JFXButton fx:id="btn_origem" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="30.0" minHeight="0.0" minWidth="0.0" onAction="#addingOrigem" textFill="#95d1ff" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="#4f7da8" glyphName="PLUS" size="14" />
+                                                   </graphic>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane>
+                                             <children>
+                                                <JFXComboBox fx:id="nivelUm" labelFloat="true" promptText="Primeira Categoria" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <JFXButton fx:id="btn_nivel1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="30.0" minHeight="0.0" minWidth="0.0" onAction="#addingNivel1" textFill="#95d1ff" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="#4f7da8" glyphName="PLUS" size="14" />
+                                                   </graphic>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="20.0" layoutY="130.0">
+                                             <children>
+                                                <JFXComboBox fx:id="nivelDois" labelFloat="true" promptText="Segunda Categoria" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <JFXButton fx:id="btn_nivel2" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="30.0" minHeight="0.0" minWidth="0.0" onAction="#addingNivel2" textFill="#95d1ff" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="#4f7da8" glyphName="PLUS" size="14" />
+                                                   </graphic>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="20.0" layoutY="185.0">
+                                             <children>
+                                                <JFXComboBox fx:id="nivelTres" labelFloat="true" promptText="Terceira Categoria" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <JFXButton fx:id="btn_nivel3" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="30.0" minHeight="0.0" minWidth="0.0" onAction="#addingNivel3" textFill="#95d1ff" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="#4f7da8" glyphName="PLUS" size="14" />
+                                                   </graphic>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" focusTraversable="true" prefHeight="460.0" prefWidth="334.0" spacing="30.0" style="-fx-border-color: #ccc; -fx-border-width: 0 0 0 1;">
+                                 <children>
+                                    <HBox VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <VBox alignment="BASELINE_LEFT" spacing="10.0">
+                                             <children>
+                                                <VBox fx:id="vBoxImagemProduto" maxHeight="180.0" maxWidth="180.0" minHeight="170.0" minWidth="180.0" prefHeight="180.0" prefWidth="180.0" />
+                                                <HBox spacing="10.0">
+                                                   <children>
+                                                      <FontAwesomeIconView fill="#4f7da8" glyphName="CAMERA" onMouseClicked="#setImagemEventMause" size="16" style="-fx-cursor: hand;" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar Imagem" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <AnchorPane>
+                                       <children>
+                                          <JFXTextField fx:id="txt_valorUnidade" labelFloat="true" promptText="Valor" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets right="10.0" />
+                                             </padding>
+                                          </JFXTextField>
+                                          <JFXComboBox fx:id="cb_unidades" focusColor="#405aa800" layoutX="227.0" maxWidth="110.0" minWidth="110.0" prefHeight="25.0" prefWidth="110.0" promptText="Unidade" unFocusColor="#4d4d4d00" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                          <JFXButton fx:id="btn_unidade" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="30.0" minHeight="0.0" minWidth="0.0" onAction="#addingUnidade" textFill="#95d1ff" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#4f7da8" glyphName="PLUS" size="14" />
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane>
+                                    <JFXTextArea fx:id="detalhes" labelFloat="true" minHeight="63.0" prefHeight="161.0" prefWidth="293.0" promptText="Detalhes" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="24.0" left="20.0" right="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+         <bottom>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <JFXProgressBar fx:id="progressBar" progress="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </center>
+   <bottom>
+      <HBox alignment="BOTTOM_RIGHT" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="idIdent" style="-fx-background-color: Transparent;" />
+            <JFXButton contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="580.0" layoutY="20.0" onAction="#guardarCliente" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #4f7da8;" text="GUARDAR" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_DOUBLE_DOWN" lineSpacing="10.0" translateY="1.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home /">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto /">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="textInforme" layoutX="114.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" onMouseClicked="#clossingView" style="-fx-cursor: hand;" stylesheets="@../../css/clossingButom.css">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <MaterialDesignIconView glyphName="WINDOW_CLOSE" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+      </HBox>
+   </top>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <effect>
+      <InnerShadow color="#2a4e72" height="10.0" radius="4.5" width="10.0" />
+   </effect>
+</BorderPane>

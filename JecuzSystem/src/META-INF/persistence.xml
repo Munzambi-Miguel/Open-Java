@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SystemPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.developer.java.entity.Nivel1</class>
+    <class>com.developer.java.entity.Entity</class>
+    <class>com.developer.java.entity.Nivel2</class>
+    <class>com.developer.java.entity.Product</class>
+    <class>com.developer.java.entity.Address</class>
+    <class>com.developer.java.entity.Caixa</class>
+    <class>com.developer.java.entity.City</class>
+    <class>com.developer.java.entity.Nivel3</class>
+    <class>com.developer.java.entity.Item</class>
+    <class>com.developer.java.entity.Autentication</class>
+    <class>com.developer.java.entity.Contact</class>
+    <class>com.developer.java.entity.Movement</class>
+    <class>com.developer.res.fxml.clientes.Test</class>
+    <class>com.developer.util.Pagination</class>
+    <class>com.developer.java.entity.Entityes</class>
+    <class>com.developer.java.entity.Tipocliente</class>
+    <class>com.developer.java.entity.Mysupply</class>
+    <class>com.developer.java.entity.Myclient</class>
+    <class>com.developer.java.entity.Myentity</class>
+    <class>com.developer.java.entity.Company</class>
+    <class>com.developer.java.entity.Montra</class>
+    <class>com.developer.java.entity.Mymovement</class>
+    <class>com.developer.java.entity.EnviadosParavenda</class>
+    <class>com.developer.java.entity.Produttype</class>
+    <class>com.developer.java.entity.Location</class>
+    <class>com.developer.java.entity.Zone</class>
+    <class>com.developer.java.entity.SecaoDia</class>
+    <class>com.developer.java.entity.Grup</class>
+    <class>com.developer.java.entity.Client</class>
+    <class>com.developer.java.entity.Pais</class>
+    <class>com.developer.java.entity.Fatura</class>
+    <class>com.developer.java.entity.Armazem</class>
+    <class>com.developer.java.entity.Deposito</class>
+    <class>com.developer.java.entity.Unidade</class>
+    <class>com.developer.java.entity.Photo</class>
+    <class>com.developer.java.entity.Preco</class>
+    <class>com.developer.java.entity.CaixaMovement</class>
+    <class>com.developer.java.entity.Maquina</class>
+    <class>com.developer.java.entity.Historico</class>
+    <class>com.developer.java.entity.AberturaDia</class>
+    <class>com.developer.java.entity.TipoDevolucao</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jcomerci?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
